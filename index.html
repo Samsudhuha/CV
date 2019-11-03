@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>msamsudhuha</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="atas">
+        <header>
+            <p>hi!</p>
+            <p id="nama"><b>i'm samsu dhuha</b></p>
+            <p style="text-transform: none;">have a nice day!</p>
+        </header>
+    </div>
+    <nav><b>About me</b></nav>
+    <section id="isi">
+        <div id="poto">
+            <img id="myImage" src="/gambar/poto diri.jpg" alt="poto diri">
+            <button type="button" onclick="Foto(0)">Foto siang</button>
+            <button type="button" onclick="Foto(1)">Foto malam</button>
+        </div>
+        <div class="text about">
+            <p>
+                Hello, my name is Muhamat Samsu Dhuha. I'm 18 years old and currently study in IT department at Institut Teknologi Sepuluh Nopember, Surabaya.
+            </p>
+            <p>
+                I am hard-working student and like to learn a new things. I'd like to join more community such as web developer or app developer. This is my first website and need more improvement so I'd like to hear more advice. 
+                I have a dream to be a successful programmer and I will make my dream come true. Hope we can collaborate and work together.
+            </p>
+        </div>
+    </section>
+    <section>
+        <div>
+            <h1 id="why">why programmer?</h1>
+            <div class="text why">
+                <p>
+                    I'm wondering of rapidly changes in this world that everything can be done by robot. They will do every command that people need and want. It helps a lot of people to work efficiently.       </p>
+                <p>
+                    I want to be the next larry page in Indonesia. I considered there are a lot of things that I have to learn and it turns me to programming world. 
+                </p>
+            </div>
+            <div>
+                <h1 id="journey">The Journey</h1>
+                <div class="text journey">
+                    <ol style="margin-left: -100px">
+                        <ul>Semester 1</ul>
+                        <ol>
+                            <ul>- Program basic</ul>
+                        </ol>
+                        <ul>Semester 2</ul>
+                        <ol>
+                            <ul>- Digital system</ul>
+                            <ul>- Data Structure</ul>
+                            <ul>- HTML and CSS</ul>
+                        </ol>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        This is my biodata and It's my first time make a web.<br>
+        Love you all!
+    </footer>
+    <script>
+            function Foto(Check) {
+              var pic;
+              if (Check == 0) {
+                pic = "/gambar/poto diri.jpg"
+              } else {
+                pic = "/gambar/IMG_0113.jpg"
+              }
+              document.getElementById('myImage').src = pic;
+            }
+    </script>
+</body>
+</html>
